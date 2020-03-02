@@ -1,1 +1,6 @@
 @import url("https://marksheet.io/css/reset.css");
+
+h1 {
+    font-size: 20;
+    color: darkgoldenrod;
+}
