@@ -1,90 +1,114 @@
+/* Импорт стилей, шрифтов и иконок */
+/* Сброс CSS */
 @import url("https://marksheet.io/css/reset.css");
 
-/ *
-  ## Device = Рабочие столы
-  ## Screen = 1281px для настольных компьютеров с более высоким разрешением
-* /
 
-@media ( min-width : 1281 px ) {
-
-  / / CSS
-
+/* Базовые стили */
+html {
+    height: 100%;
 }
-
-/ *
-  ## Device = Ноутбуки, Рабочие столы
-  ## Экран = ч / б от 1025 до 1280 пикселей
-* /
-
-@media ( минимальная ширина : 1025 пикселей ) и ( максимальная ширина : 1280 пикселей ) {
-
-  / / CSS
-
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-
-/ *
-  ## Устройство = планшеты, iPad (портрет)
-  ## Экран = ч / б от 768 до 1024 пикселей
-* /
-
-@media ( минимальная ширина : 768 пикселей ) и ( максимальная ширина : 1024 пикселей ) {
-
-  / / CSS
-
-}
-
-/ *
-  ## Устройство = планшеты, iPad (альбомная)
-  ## Экран = ч / б от 768 до 1024 пикселей
-* /
-
-@media ( минимальная ширина : 768 пикселей ) и ( максимальная ширина : 1024 пикселей ) и ( ориентация : альбомная) {
-
-  / / CSS
-
-}
-
-/ *
-  ## Устройство = планшеты с низким разрешением, мобильные телефоны (ландшафт)
-  ## Экран = ч / б от 481 до 767 пикселей
-* /
-
-@media ( минимальная ширина : 481 пикселей ) и ( максимальная ширина : 767 пикселей ) {
-
-  / / CSS
-
-}
-
-/ *
-  ## Устройство = большинство смартфонов мобильных телефонов (портрет)
-  ## Экран = ч / б от 320 до 479 пикселей
-* /
-
-@media ( минимальная ширина : 320 пикселей ) и ( максимальная ширина : 480 пикселей ) {
-
-  / / CSS
-
-}
-.contair {
+.container {
+    display: flex;
     width: 100%;
-    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    max-width: 1200px; /*максимальная ширина может иметь другое значение*/
     padding: 0 15px;
     margin: 0 auto;
+}
+
+
+/* Предустановки */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
 }
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex; /*обозначаем, что это flex-контейнер*/
-}
-.row {
-    flex-direction: row;
-}
-.column {
-    flex-direction: column;
 }
 
-h1 {
-    font-size: 20;
-    color: darkgoldenrod;
+
+/* Гибкая верстка */
+img {
+    width: 100%;
+    max-width: 100%;
+}
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+.col-3 {
+    flex: 3;
+}
+.col-4 {
+    flex: 4;
+}
+.col-5 {
+    flex: 5;
+}
+
+
+/* Шапка сайта */
+header {
+    flex: 0 0 auto;
+    background-color: navy;
+    height: 100px
+    color white;
+
+}
+
+
+
+header > div.container {
+    height: 100%;
+    align-content: center;
+}
+
+/* Основное содержимое */
+main {
+    display: flex;
+    flex: 1 0 auto;
+}
+main > div.container {
+    flex: 1 0 auto;
+    background-color: lightslategray;
+
+
+
+
+}
+section {
+
+}
+aside {
+
+}
+
+@media(max-widh: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* Подвал сайта */
+footer {
+    flex: 0 0 auto;
+    background-color: navy;
+    height:  300px
 }
