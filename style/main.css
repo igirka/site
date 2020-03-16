@@ -63,27 +63,32 @@ img {
 header {
     flex: 0 0 auto;
     background-color: navy;
-    height: 100px
-    color white;
+    height: 100px;
+    color: white;
 
 }
 
-
-
-header > div.container {
+header > div.container{
     height: 100%;
-    align-content: center;
+    align-items: center;
+
 }
+header ul li {
+    margin-right: 20px;
+
+}
+
 
 /* Основное содержимое */
 main {
     display: flex;
     flex: 1 0 auto;
+    background-color: lightslategray;
+
 }
 main > div.container {
     flex: 1 0 auto;
-    background-color: lightslategray;
-
+    background-color: white;
 
 
 
@@ -92,6 +97,8 @@ section {
 
 }
 aside {
+    flex: 1 0 auto; /*1 -это ширина столбца*/
+    padding: 0 15px;
 
 }
 
@@ -110,5 +117,14 @@ aside {
 footer {
     flex: 0 0 auto;
     background-color: navy;
-    height:  300px
+    height: 200px;
+    color: white;
+}
+footer > div.container{
+    height: 100%;
+    padding: 10px 0;
+}
+
+footer nav ul {
+    margin-right: 30px;
 }
