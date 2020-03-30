@@ -1,68 +1,38 @@
-/* Импорт стилей, шрифтов и иконок */
-/* Сброс CSS */
-@import url("https://marksheet.io/css/reset.css");
-
-
-/* Базовые стили */
-html {
-    height: 100%;
+/*мпорт стилей, шрифтов и иконок */
+    /*Сброс CSS*/
+        @import url("https://marksheet.io/css/reset.css");
+    /* А может быть лучше Normalize?*/
+        @import
+        url("https://github.com/necolas/normalize.css/blob/master/normalize.css");
+/*Базовые стили*/
+    html {
+        height: 100%;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
 }
-.container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px; /*максимальная ширина может иметь другое значение*/
-    padding: 0 15px;
-    margin: 0 auto;
+    .container {
+        width: 100%;
+        max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+        margin: 0 auto;
 }
-.button {
-    height: 50px;
-    /width: 100px;*/
-}
-.button {
-    padding: 20px 30px;
-    margin: 10px 20px;
-    text-decoration: none !important;
-}
-.button:hover {
-    background-color: #888;
-}
-.container {
-    padding: 0 15px;
-
-}
-body {
-    font-size: 14px;
-}
-h1 {
-    font-size: 2.4em;
-    padding: .8em 0 1.2em 0;
-}
-/* Предустановки */
+/*Предустоновки*/
 .row {
-    display: flex;
     flex-direction: row;
 }
 .column {
-    display: flex;
     flex-direction: column;
 }
-nav ul {
+nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.b-right {
-    border-right: 1xp solid #e5e5e5;
-}
-
-/* Гибкая верстка */
+/* Гибкая верстка*/
 img {
-    width: 100%;
+    width: 100%
     max-width: 100%;
 }
 .col-1 {
@@ -80,108 +50,35 @@ img {
 .col-5 {
     flex: 5;
 }
-.button {
-    height: 50px;
-    /*width: 100 px;*/
-    background-color: #666;
-    border-radius: 5px;
+.col-6 {
+    flex: 6;
 }
-
-
-/* Шапка сайта */
-header {
-    flex: 0 0 auto;
-    background-color: navy;
-    height: 100px;
-    color: white;
-
-}
-
-header > div.container{
-    height: 100%;
-    align-items: center;
-
-}
-header ul li {
-    margin-right: 20px;
-
-}
-header .logo {
-    width: 100px
-}
-
-/* Основное содержимое */
-main {
-    display: flex;
-    flex: 1 0 auto;
-    background-color: lightslategray;
-
-}
-main > div.container {
-    flex: 1 0 auto;
-    background-color: white;
-
-
-
-}
-section {
-
-}
-aside {
-    flex: 1 0 auto; /*1 -это ширина столбца*/
-    padding: 0 15px;
-
-}
-
-@media(max-widh: 800px) {
-    .container{
+@media (max-width: 800px) {
+    .container {
         flex-direction: column;
     }
 }
+/*шапка сайта*/
+header {
+    flex: 0 0 auto;
+}
+/* Основное содержимое*/
 main {
-    background-image:
- url(/site/images/background.jpg);
-    background-position: center center;
-    background-size: cover;
+    display: flex;
+    flex: 0 0 auto;
 }
-aside a{
-    color: #000;
-    text-decoration: none;
+main > div.container {
+     flex: 0 0 auto;
 }
-aside a:hover {
-    text-decoration: underline;
+section {
+     flex: 3 0 auto; /* 3 - это ширина столбца*/
+     padding: 0 15px;
 }
-aside li{
-    line-height: 1.5em;
+aside {
+     flex: 1 0 auto; /* 1 - это ширина столбца*/
+     padding: 0 15px;
 }
-
-
-
-
 /* Подвал сайта */
 footer {
     flex: 0 0 auto;
-    background-color: navy;
-    height: 200px;
-    color: white;
-}
-footer > div.container{
-    height: 100%;
-    padding: 10px 0;
-}
-
-footer nav ul {
-    margin-right: 30px;
-}
-header a,
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-header a:hover,
-footer a:hover {
-    text-decoration: underline;
-}
-footer li {
-    line-height: 2em;
 }
