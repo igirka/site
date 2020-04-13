@@ -1,1 +1,111 @@
 /* ИМпорт стилей, шрифтов и иконок*/
+    /* сброс css */
+    @import url("https://marksheet.io/css/reset.css");
+/* Базовые стили*/
+html {
+    height: 100%
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: Verdana, sans-serif;
+    font-size: 12 px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto
+}
+/*предустановки*/
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+strong {
+    font-weight: bold;
+}
+.block {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+/*гибкая верстка*/
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+.col-3 {
+    flex: 3;
+}
+.col-4 {
+    flex: 4;
+}
+.col-5 {
+    flex: 5;
+}
+.col-6 {
+    flex: 6;
+}
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
+/*шапка  сайта*/
+header {
+    flex: 0 0 auto;
+    height: 100px;
+    background-color: black;
+}
+header > div.container {
+    height: 100%;
+    align-items: flex-end;
+}
+header-icon {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    padding-bottom: 20px;
+}
+header li {
+    color: black
+}
+header li a {
+    padding: 50px 10px 10px 10px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+.header-icon img {
+    padding-right: 20px;
+}
+
+
+/*основное содержимое*/
+.moon {
+    flex: 1 0 auto;
+}
+.advantages {
+    flex: 1 0 auto;
+}
+.content {
+    flex: 1 0 auto;
+}
+/*подвал сайта*/
+footer {
+    flex: 0 0 auto;
+}
