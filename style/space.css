@@ -38,6 +38,49 @@ strong {
     width: 100%;
     margin: 0 auto;
 }
+.btn {
+    position: relative;
+    display: flex;
+    width: 195px;
+    padding: 0 25px;
+    font-family: Verdina, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    color: #222222;
+    border-radius: 50px;
+}
+.btn: :after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    width: 19px;
+    height: 16px;
+    background-image: url(/images/right-arrow-dark.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.btn-yellow {
+    background-color: #feca30;
+}
+.btn-yellow:hover {
+    background-color: #fff;
+}
+.btn-grey {
+    width: 215px;
+    color: #fff;
+    background-color: #222;
+}
+.btn-grey: :after {
+    background-image: url(/images/right-after-white.png)
+}
+.btn-grey:hover {
+    background-color: #676767;
+}
 /*гибкая верстка*/
 .col-1 {
     flex: 1;
@@ -98,6 +141,9 @@ header li a {
 /*основное содержимое*/
 .moon {
     flex: 1 0 auto;
+    flex-wrap: wrap;
+    background-color: #______;
+    padding: 60px 0;
 }
 .advantages {
     flex: 1 0 auto;
@@ -105,6 +151,32 @@ header li a {
 .content {
     flex: 1 0 auto;
 }
+.moon-header {
+    width: 300px;
+    margin: 0 5vw;
+    padding: 60px 0;
+}
+.moon h1 {
+    margin: 40px 0;
+    font-family: Courier new, monospace;
+    font-weight: bold;
+    font-size: 3.2em;
+    line-height: 50px;
+    color: #fff;
+}
+.moon p {
+    margin-bottom: 50px;
+    padding-left: 5px;
+    line-height: 22px;
+    color: #______;
+    font-size: 1.1em;
+}
+.moon img {
+    width: 100%;
+    max-width: 438;
+    margin: 30px 0;
+}
+
 /*подвал сайта*/
 footer {
     flex: 0 0 auto;
