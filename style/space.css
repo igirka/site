@@ -108,16 +108,17 @@ strong {
 /*шапка  сайта*/
 header {
     flex: 0 0 auto;
-    height: 100px;
     background-color: black;
+    font-size: 0.9em;
+    font-family: sans-serif;
 }
 header > div.container {
     height: 100%;
-    align-items: flex-end;
+    padding-top: 50px;
 }
 header-icon {
     display: flex;
-    padding-bottom: 20px;
+    padding-top: 50px;
     align-items: center;
 }
 header ul {
