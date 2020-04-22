@@ -60,7 +60,7 @@ strong {
     top: 17px;
     width: 19px;
     height: 16px;
-    background-image: url(site/images/right-arrow-dark.png);
+    background-image: url(/site/images/right-arrow-dark.png);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -76,7 +76,7 @@ strong {
     background-color: #222;
 }
 .btn-grey::after {
-    background-image: url(site/images/right-after-white.png)
+    background-image: url(/site/images/right-after-white.png)
 }
 .btn-grey:hover {
     background-color: #676767;
